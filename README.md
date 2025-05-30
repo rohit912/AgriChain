@@ -1,15 +1,15 @@
 # AgriChain
 
-Problem 1 : Program for following:
-Given a string, find the length of the longest substring without repeating characters. For example, the longest substring without repeating letters for "abcabcbb" is "abc", which the length is 3. For "bbbbb" the longest substring is "b", with the length of 1
+Problem 1: Program for the following:
+Given a string, find the length of the longest substring without repeating characters. For example, the longest substring without repeating letters for "abcabcbb" is "abc", which the length is 3. For "bbbbb", the longest substring is "b", with the length of 1
 
-Answer 1 : In JAVA Language 
+Answer 1: In the JAVA Language 
 
 package basicprogram;
  
 import java.util.HashSet;
  
-public class LongesrSubstring
+public class LongestSubstring
 {
 	 public static int lengthOfLongestSub(String p)
 		    {
@@ -50,4 +50,4 @@ bbbbb "bbbbb": 1
 
 
 
-Program 2 : Assume there is a website https://agrichain.com which does exactly the same thing as problem 1, it takes the input on home page and then on click of submit button, it navigates to different page where it prints the output for longest substring without repeating letters.
+Program 2: Assume there is a website https://agrichain.com which does exactly the same thing as problem 1, it takes the input on the home page and then on click of submit button, it navigates to different page where it prints the output for the longest substring without repeating letters.
