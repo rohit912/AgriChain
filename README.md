@@ -11,14 +11,15 @@ import java.util.HashSet;
  
 public class LongestSubstring
 {
-	 public static int lengthOfLongestSub(String p)
+	
+		    public static int lengthOfLongestSub(String p)
 		    {
 		        int m = p.length();
 		        int maxLength = 0;
 		        int left = 0;
 		        HashSet<Character> set = new HashSet<>();
 		
- for (int right = 0; right < m; right++)
+		        for (int right = 0; right < m; right++)
 		        {
 		            while (set.contains(p.charAt(right)))
 		            {
@@ -29,19 +30,18 @@ public class LongestSubstring
 		            maxLength = Math.max(maxLength, right - left + 1);
 		        }
 		
-  return maxLength;
+		        return maxLength;
 		    }
 		
- public static void main(String[] args) {
+		    public static void main(String[] args) {
 		        String input1 = "abcabcbb";
 		        String input2 = "bbbbb";
 		       
 		
-  System.out.println("abcabcbb \"" + input1 + "\": " + lengthOfLongestSub(input1));
-  System.out.println("bbbbb \"" + input2 + "\": " + lengthOfLongestSub(input2));
+		        System.out.println("abcabcbb \"" + input1 + "\": " + lengthOfLongestSub(input1));
+		        System.out.println("bbbbb \"" + input2 + "\": " + lengthOfLongestSub(input2));
 		    }
 }
-
 Output 
 
 abcabcbb "abcabcbb": 3
